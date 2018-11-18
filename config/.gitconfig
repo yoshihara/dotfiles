@@ -1,0 +1,28 @@
+[alias]
+	co = checkout
+	l = log -p --decorate
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	showpr = "!f() { git log --merges --oneline --reverse --ancestry-path $1...master | grep 'Merge pull request #' | head -n 1; }; f"
+[color]
+	ui = auto
+[user]
+	name = yoshihara
+	email = 594134+yoshihara@users.noreply.github.com
+[github]
+	user = yoshihara
+[push]
+	default = simple
+[pager]
+	log = less
+	show = less
+	diff = less
+        grep = less
+        blame = less
+
+[include]
+	path = .gitconfig.local
+[ghq]
+        root = ~/work/src
+[url "git@github.com:"]
+    InsteadOf = https://github.com/
