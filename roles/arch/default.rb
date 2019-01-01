@@ -9,3 +9,4 @@ end
 include_cookbook "git"
 include_cookbook "zsh"
 include_cookbook "emacs"
+include_cookbook "ricty"
