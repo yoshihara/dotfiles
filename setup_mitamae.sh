@@ -22,6 +22,9 @@ case "$(uname)" in
       ;;
 esac
 
+mkdir bin/
+rm -f ${mitamae_bin}
+
 wget https://github.com/k0kubun/mitamae/releases/download/v${version}/${mitamae_bin}
 chmod +x ./${mitamae_bin}
 mv ./${mitamae_bin} bin/
