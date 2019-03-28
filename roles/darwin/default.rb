@@ -25,3 +25,5 @@ include_cookbook "zsh"
 include_cookbook "emacs"
 
 include_cookbook "ricty"
+
+include_cookbook "aquaskk"
